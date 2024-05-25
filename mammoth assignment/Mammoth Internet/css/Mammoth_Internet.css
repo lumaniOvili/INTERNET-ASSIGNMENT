@@ -1,0 +1,107 @@
+/*CSS code for the mammoth internet website*/
+
+/*my comments are for revision purposes*/
+
+/*The h1 element should be fixed at the top of the browser window, remaining in place during 
+scrolling. It should have a #a9e2f8 background, black text, zero padding, centred alignment, and 
+always stay in front of other content*/
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a9e2f8;
+    color: black;
+    padding: 0;
+    text-align: center;
+    z-index: 1000; /* Ensure the h1 stays in front of other content */
+  }
+  #main-container {
+  
+    text-align: left; /* Center the content horizontally within the container */
+  
+  }
+  
+  #flowchart-photo img {
+    
+    width: 550px; /* Set the width of the photo */
+    border: 2px solid black; /* Add a 2px solid black border */
+    padding-left: 5px; /* Add 5px of padding */
+    display: block; /* Ensure that the container only takes the necessary width */
+    margin: 0 auto;
+  }
+  
+
+body {
+    margin: 0;
+    padding: 100px 50px 20px 50px;
+  }
+  
+  p {
+    margin: 0;
+    padding-bottom: 15px;
+    /*padding-top: 15px;*/
+  }
+
+
+h2 {
+    color: black;
+    /* padding: 2px; */
+    text-align: left;
+    background-color: #D3D3D3;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .Extra-padding1 {
+    padding-bottom: 2px;
+    background-color: #1ee62f;
+  }
+  
+  .Extra-padding2 {
+    padding-top: 2px;
+    background-color: #e61e1e;
+  }
+  
+  
+  ul {
+    font-size: medium;
+    list-style: none;
+  }
+  
+  li {
+    font-style: italic;
+  }
+  
+  .BoldItalic {
+    font-weight: bold;
+  }
+  
+  #Table-Caption {
+    padding: 5px;
+    background-color: #1ee62f;
+    color: black;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    padding: 8px;
+    border: 1px solid #dddddd;
+  }
+  
+  td {
+    font-family: arial, sans-serif;
+  }
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+  
+   

@@ -1,0 +1,12 @@
+[
+{"name":"Muhammad ibn Musa al-Khwarizmi","contribution":"Developing the foundation of algebra and algorithms, advancing the fields of mathematics, astronomy, and geography, and creating the foundation for modern trigonometry","year":780},
+{"name":"Ada Lovelace","contribution":"Wrote the first algorithm for the Analytical Engine","year":1843},
+{"name":"Alan Turing","contribution":"Developed the concept of a universal machine and laid the foundation for modern computer science","year":1936},
+{"name":"Grace Hopper","contribution":"Invented the first compiler, which translated high-level programming language into machine code","year":1952},
+{"name":"Dennis Ritchie","contribution":"Created the C programming language, which influenced the development of many other programming languages","year":1972},
+{"name":"Guido van Rossum","contribution":"Created the Python programming language, emphasizing code readability","year":1991},
+{"name":"James Gosling","contribution":"Invented Java, a widely-used programming language known for its platform independence","year":1995},
+{"name":"Brendan Eich","contribution":"JavaScript, which allows the creation of interactive and dynamic web content. It is used for both front- and back-end Internet Programming and is a core component of modern web applications","year":1995},
+{"name":"Yukihiro Matsumoto","contribution":"Ruby, which is a dynamic, open-source programming language that focuses on simplicity and productivity. It introduced the Ruby on Rails framework that made it easier to develop web applications quickly","year":1995},
+{"name":"Anders Hejlsberg","contribution":"C# is a versatile, object-oriented language developed by Microsoft as part of the .NET framework. It has a wide array of applications including Windows applications, web services, and game development using Unity","year":2000}
+]

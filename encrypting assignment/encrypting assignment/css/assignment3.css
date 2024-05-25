@@ -1,0 +1,37 @@
+h2 {
+  /* complete it*/
+  text-align: center; /* Center the h2 heading */
+}
+#main-part2,
+#main-part1 {
+  background-color: #ffb;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 750px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  position: static;
+  font-size: 10pt;
+}
+
+#main-part2 {
+  /* complete it*/
+  background-color: rgb(187, 233, 255); /* Set background color for main-part2 */
+}
+
+#main-part1 {
+  /* complete it*/
+  background-color: #ffb; /* Set background color for main-part1 */
+}
+
+input{
+  background-color: #eee; /* Set background color for all input forms */
+}
+
+.center {
+  /* complete it*/
+  margin: auto;
+    width: 60%;
+    display: flexbox;
+    justify-content: center;
+}

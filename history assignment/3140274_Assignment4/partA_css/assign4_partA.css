@@ -1,0 +1,143 @@
+/* myclasses.css for myclasses.html */
+
+/* Styles that apply to every element in the body, unless overridden */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: #000;
+	background-color: #fff; /* yellow */
+}
+
+h1 {
+	background-color: #a9e2f8;
+	padding: 10px;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#main_container {
+	padding: 150px 50px 20px 50px;
+}
+
+#flowchart_photo {
+	border: 2px solid rgb(0, 0, 0);
+	padding: 5px;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+h2 {
+	color: #000;
+	text-align: left;
+	padding: 2px 2px 2px 2px; /* top right bottom left (i.e., clock-wise)*/
+	background-color: #d3d3d3;
+} /* Overrides body font color style above */
+
+.Extra-padding1 {
+	padding: 1px 0px 0px 0px; /* top right bottom left (i.e., clock-wise)*/
+	background-color: #1ee62f;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Extra-padding2 {
+	padding: 0px 0px 1px 0px; /* top right bottom left (i.e., clock-wise)*/
+	background-color: #e61e1e;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Styles any list item in an unordered list */
+ol li {
+	font-size: medium; /* Overrides body font size above */
+	font-style: italic; /* Adds italic style to text of list items */
+}
+
+/* A "generic" class whose styles can be applied to any element */
+.BoldItalic {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* A "generic" class whose styles can be applied to any element */
+.BlackOnWhiteSerif {
+	padding: 30px; /* on all four sides of any element with this style */
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	background-color: #fff;
+}
+
+/* for images*/
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+p {
+	margin: 0px;
+	padding-bottom: 15px;
+}
+/* A class that can only be applied to paragraph elements */
+p.Standout {
+	padding: 15px; /* on all four sides of any paragraph with this style */
+	color: #f00; /* red */
+	background-color: #d3d3d3; /* lightgrey */
+}
+
+p.Table_Caption {
+	padding: 5px; /* on all four sides of any paragraph with this style */
+	background-color: #1ee62f; /* red */
+	color: black; /* lightgrey */
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border-color: rgb(125, 19, 224);
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.hidden {
+	display: none;
+}
+.visible {
+	display: block;
+}
+
+#more-less {
+	color: blue;
+	cursor: pointer;
+}
+
+#flowChart {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+/* Styles for toggling padding position */
+.padding-top {
+    margin-top: 15px; /* or whatever value you need */
+    margin-bottom: 0;
+}
+
+.padding-bottom {
+    margin-top: 0;
+    margin-bottom: 15px; /* or whatever value you need */
+}

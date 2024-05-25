@@ -1,0 +1,96 @@
+<!--
+    Complete the code in the indicated places.
+    Do NOT change the code elsewhere
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="css/assignment3.css" />
+  </head>
+ 
+  <body>
+    <h2>
+      PART 1: Nature's Source Collection <br />
+      From Mother Nature to You <br />Best Supplement for More flexibility
+    </h2>
+    <div id="main-part1" class="center">
+      <fieldset>
+        <legend>ADD PRODUCT</legend>
+        <p>
+          Click <em>"Add"</em> to add a new Remedi/book/exercise to Nature's
+          Source collection.
+        </p>
+        <p>
+          Product to add:
+          <input type="text" id="newProductId" value="Exercise A" />
+          <input type="button" value="Add" onclick="addProduct()" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>PRODUCTS LIST</legend>
+        <p>
+          Click <em>"List"</em> to see the product in Nature's Source
+          collection. <br />Current Products are:
+        </p>
+
+        <ul id="productsId"></ul>
+
+        <input type="button" value="List" onclick="listProducts()" />
+      </fieldset>
+    </div>
+
+    <h2>
+      PART 2: Nature's Source <br />
+      Mind Exercise Game with Cryptography
+    </h2>
+    <div id="main-part2" class="center">
+      <form id="Part2_forms">
+        <fieldset>
+          <legend>PICK A PRODUCT</legend>
+          <p>
+            Click <em>"Propose"</em> to select a random product from the
+            collection.
+            <!-- <div id="randomProductId" >    </div>-->
+          </p>
+
+          <div>
+            <input type="button" value="Propose" onclick="randomProduct()" />
+            <input type="text" id="randomProductId_txt" size="25" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cryptography</legend>
+          <p>Try to guess the new words after the encryption</p>
+          <p>
+            Enter the Number of <em>Rotations for Caesar Cipher:</em>
+            <input type="text" id="num_rotations" />
+          </p>
+     
+          <p>
+            Click <em>"Encrypt"</em> to see the cipher text.
+            <br /><br />
+
+            <input type="button" value="Encrypt" onclick="encrypt()" />
+            <p>
+              Ciphertext using Caesar Cipher: <input type="text" id="encr_txt_CC" size="25" />
+            </p> 
+
+          </p>
+
+          <br />
+          <input
+            type="button"
+            value="Reset Form Values"
+            onclick="resetFunc()"
+          />
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="./js/assignment3.js"></script>
+  </body>
+</html>

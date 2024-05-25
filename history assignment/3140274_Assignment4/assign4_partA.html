@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- myclasses.html -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Assignment 4:- Part A</title>
+		<link rel="stylesheet" href="./partA_css/assign4_partA.css" />
+		<script src="./partA_js/assign4_partA.js"></script>
+		<script>
+			// JavaScript code for adding dynamic features
+			document.addEventListener('DOMContentLoaded', function () {
+				// Function to toggle style for h1 elements
+				function toggleH1Style() {
+					const heading1 = document.getElementById('heading1');
+					// Toggle position style for h1 elements
+					if (heading1.style.position === 'static') {
+						heading1.style.position = 'fixed';
+					} else {
+						heading1.style.position = 'static';
+					}
+				}
+	
+				// Function to toggle style for div elements
+				function toggleDivStyle() {
+					const abstractDiv = document.getElementById('absractDiv');
+					const introDiv = document.getElementById('introDiv');
+					const controDiv = document.getElementById('controDiv');
+					const resultDiv = document.getElementById('resultDiv');
+	
+					const divs = [abstractDiv, introDiv, controDiv, resultDiv];
+	
+					divs.forEach(div => {
+       					 // Get the computed background color of the div
+       					 const computedColor = window.getComputedStyle(div).backgroundColor;
+
+       					 // Toggle background color for div elements
+       					 if (computedColor === 'rgb(30, 230, 47)') {
+          				div.style.backgroundColor = '#e61e1e'; // Red color
+       					 } else {
+        				 div.style.backgroundColor = '#1ee62f'; // Green color
+        				}
+					});
+				}
+				// Function to handle mouseover event for img element
+				function handleImgMouseover() {
+                this.style.transform = 'scale(1.2)'; // Increase size by 20%
+            }
+
+            // Function to handle mouseout event for img element
+            function handleImgMouseout() {
+                this.style.transform = 'scale(1)'; // Return to original size
+            }
+
+            // Function to handle mouseover event for p element with id "tableId"
+            function handleTableMouseover() {
+                this.style.backgroundColor = '#0000ff'; // Blue color
+            }
+
+            // Function to handle mouseout event for p element with id "tableId"
+            function handleTableMouseout() {
+                this.style.backgroundColor = '#1ee62f'; // Green color
+            }
+
+	
+				// Add click event handlers to h1 elements
+				document.getElementById('heading1').addEventListener('click', toggleH1Style);
+	
+				// Add click event handlers to specified div elements
+				document.getElementById('absractDiv').addEventListener('click', toggleDivStyle);
+				document.getElementById('introDiv').addEventListener('click', toggleDivStyle);
+				document.getElementById('controDiv').addEventListener('click', toggleDivStyle);
+				document.getElementById('resultDiv').addEventListener('click', toggleDivStyle);
+
+				// Add mouseover and mouseout event handlers to img element
+				document.getElementById('flowChart').addEventListener('mouseover', handleImgMouseover);
+            document.getElementById('flowChart').addEventListener('mouseout', handleImgMouseout);
+
+            // Add mouseover and mouseout event handlers to p element with id "tableId"
+            document.getElementById('tableId').addEventListener('mouseover', handleTableMouseover);
+            document.getElementById('tableId').addEventListener('mouseout', handleTableMouseout);
+			});
+		</script>
+	</head>
+	<body>
+		<h1 id="heading1">
+			The Mammoth Internet: Are We Ready?<br />
+			By: Miss Ovili Ifeakachuwku et al.
+		</h1>
+
+		<div id="main_container">
+			<div id="absractDiv" class="Extra-padding1">
+				<h2>Abstract</h2>
+			</div>
+			<p>
+				The Internet has made massive progress since the 1990s. The amount of
+				traffic that crosses the Internet now is 22 million times more than what
+				was generated in 1992. Although the fiber optic cables replaced the
+				century-old copper cables to transmit trillions of bits per second, the
+				end-user at a local area is still hungry for more bandwidth to run new
+				emerging applications. This put both ISPs and the mobile network
+				operators under challenges: Are they ready for the Mammoth Internet?
+				Will ISPs be able to offer the capacity to meet the growing demand? Is
+				their infrastructure capable of serving the future disruptive services
+				such as 4K/8K technology, VR/AR, autonomous vehicles, etc? The
+				literature lacks a comprehensive study of bandwidth requirements for the
+				end-user in both fixed-access and mobile Internet.
+			</p>
+			<!-- <p class="Standout">We have a wide range of products that include:</p> -->
+			<div id="introDiv" class="Extra-padding2">
+				<h2>Introduction</h2>
+			</div>
+			<p>
+				The advancement of telecom technologies in recent years has opened the
+				door for the development of next-generation digital services and
+				applications. However, they have also led to a huge surge in data
+				traffic that has evolved from Kilobytes to Exabytes over the years.
+				These data-driven services have different Internet bandwidth (BW)
+				requirements. Therefore, the projection of the future BW requirements
+				for consumers of these services is of direct interest to Internet
+				Service Providers (ISPs) and cellular networks operators. Overlooking
+				this problem poses a real risk to their networks and consequently may
+				impact their customers.
+			</p>
+			<div id="show-hide">
+				<div id="controDiv" class="Extra-padding1">
+					<h2>Contributions</h2>
+				</div>
+				<p>
+					The coming few years will be critical for cellular operators and ISPs
+					to make their future networks adaptable to include a multitude of
+					cellular-enabled devices and services. The contributions of this paper
+					are as follows.
+				</p>
+				<ol>
+					<li>
+						Identify most disruptive bandwidth drivers for both fixed-access
+						Internet and cellular-based Internet.
+					</li>
+					<li class="BoldItalic">
+						Provide a case study of flagship smartphones and their bandwidth
+						requirements for streaming video contents.
+					</li>
+					<li>
+						Develop forecasting models for both fixed-access Internet, and
+						cellular-based mobile Internet; and then project the future
+						bandwidth requirements for the users of both networks by year 2021.
+					</li>
+					<li class="BoldItalic">
+						Conduct multiple experiments to show the validity of our models, and
+						the impact of each bandwidth driver on the future of bandwidth
+						requirements.
+					</li>
+				</ol>
+				<p>The following diagram shows the flowchart of our paper.</p>
+				<div>
+					<img
+						id="flowChart"
+						src="images/TheMammothInternet.jpeg"
+						alt="Mammoth"
+					/>
+				</div>
+				<div id="resultDiv" class="Extra-padding2">
+					<h2>Results</h2>
+				</div>
+				<h3>Applications Bandwidth Requirements</h3>
+				<p>
+					The following Table shows the top application mix in terms of mobile
+					bandwidth consumption, the market share of each of them in 2021.
+				</p>
+				<div>
+					<p id="tableId" class="Table_Caption">
+						TABLE 10. Bandwidth requirements of top applications with the
+						presence of 4K technology for various distribution of connection
+						sharing/tethering group size, 2021.
+					</p>
+
+					<table>
+						<tr>
+							<th>Application</th>
+							<th>2021 (% market share)</th>
+						</tr>
+						<tr>
+							<td>Entertainment-Video (YouTube, Netflix, others)</td>
+							<td>44.4</td>
+						</tr>
+						<tr>
+							<td>Entertainment-Audio (iTunes, others)</td>
+							<td>1.8</td>
+						</tr>
+						<tr>
+							<td>Social Networking (Facebook, snapchat, Instagram)</td>
+							<td>22.29</td>
+						</tr>
+						<tr>
+							<td>Web browsing (HTTP, WAP browsing)</td>
+							<td>6.4</td>
+						</tr>
+						<tr>
+							<td>
+								Communications (Skype,WhatsApp,iMessage,FaceTime, Zoom, etc)
+							</td>
+							<td>7.39</td>
+						</tr>
+						<tr>
+							<td>Tunneling (SSH, VPN, Remote Desktop, VNC, SSL, etc)</td>
+							<td>8.11</td>
+						</tr>
+						<tr>
+							<td>Google Cloud</td>
+							<td>3.7</td>
+						</tr>
+						<tr>
+							<td>Other (clouds, Twitter, etc)</td>
+							<td>5.91</td>
+						</tr>
+					</table>
+					<br />
+					<p>
+						This paper provides an insightful projection of the future bandwidth
+						of both fixed-access and mobile Internet. For the two approaches,
+						fixed-access and mobile Internet, we identify the bandwidth drivers
+						and compare them in terms of their impact on the future bandwidth
+						demand. We design our models of fixed-access/mobile Internet to
+						cover a wide variety of household/connection-sharing types and as
+						well as users’ Internet usage behavior. Our findings in fixed-access
+						Internet show that 4K and VR/AR technology will shape the future of
+						residential bandwidth. On the other hand, while IoT is growing on an
+						everyday basis with many potential innovative technologies, it will
+						not alter the bandwidth consumption pattern of typical households.
+						Our model predicts a jump in residential bit rate demand, especially
+						for houses that adopt more new technology such as VR/AR and 4K video
+						streaming. We project that more than 35% of households will demand a
+						bit rate speed of more than 100 Mbps, and 10% will require more than
+						300 Mbps.
+					</p>
+					<p>
+						For more information, click
+						<a
+							href="https://ieeexplore.ieee.org/document/8835041"
+							target="_blank"
+							>here</a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="more-less"></div>
+	</body>
+</html>
